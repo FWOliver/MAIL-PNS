@@ -38,6 +38,7 @@ end
 group :test do
   gem 'cucumber-rails', :require => false
   gem 'pickle', '0.4.11'
+  gem 'rspec-rails', '~> 2.14.0'
   # database_cleaner is not required, but highly recommended
   gem 'database_cleaner'
 end
