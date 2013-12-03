@@ -11,7 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131203111010) do
+ActiveRecord::Schema.define(version: 20131203153225) do
+
+  create_table "fwt_push_notification_server_device_tokens", force: true do |t|
+    t.string   "token"
+    t.string   "user_id"
+    t.boolean  "is_valid",   default: true
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "provider"
+  end
 
   create_table "models", force: true do |t|
     t.string   "email",                  default: "", null: false
