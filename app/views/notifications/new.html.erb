@@ -1,0 +1,5 @@
+<%= form_tag "/notifications/create" do %>
+  Email: <%= text_field_tag "email" %><br/>
+  Token: <%= text_field_tag "token" %><br/>
+  <%= submit_tag "Submit" %>
+<% end %>
